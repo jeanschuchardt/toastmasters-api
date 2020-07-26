@@ -1,11 +1,17 @@
 package toastmastersapi.toastmasters.entity;
 
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
+
 
 @Data
 @Entity
-public class MeetingRoles extends Roles {
-
+@Builder
+public class MeetingRoles {
+    @Id
+    int id;
+    String name;
 }
