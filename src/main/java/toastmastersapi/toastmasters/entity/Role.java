@@ -3,7 +3,7 @@ package toastmastersapi.toastmasters.entity;
 
 import javax.persistence.Id;
 
-public class Roles {
+public class Role {
     @Id
     int id;
     String name;

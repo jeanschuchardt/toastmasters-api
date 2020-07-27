@@ -1,25 +1,25 @@
 package toastmastersapi.toastmasters.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-
-
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import java.util.Date;
 
 @Entity
-@Data
 @Builder
-public class Persons {
+@AllArgsConstructor
+@NoArgsConstructor
+@Table(name="meeting")
+public class Meeting {
     @Id
-
     int id;
-    String fristName;
-    String lastName;
-    boolean isActive;
-    Date membershiipAfiliation;
+    Date meetingDate;
+    
 
 }
